@@ -7,6 +7,8 @@
 
 ## Files in this folder
 - `README.md` — this plan (script + image prompts)
+- `youtube.md` — paste-ready upload fields (title, description, tags, pinned comment)
+- `instagram.md` — paste-ready Instagram/Facebook Reel fields (caption, cover crop, pinned comment, settings)
 - `audio/narration-hindi.mp3` — the ElevenLabs Hindi voiceover (~33 sec)
 - `images/01-hero-reference.png` — **approved baseline image**; the style reference every other image must match
 
