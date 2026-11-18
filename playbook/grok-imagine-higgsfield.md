@@ -160,7 +160,8 @@ Add a line after each session so the next post starts smarter.
 |------|-------------|------------------------------|-------------|-------------|---------|
 | 2026-11-17 | sweater-pilling clip 5 (first draft) | Grok Imagine, text-to-video | — | Refused before generating: "Prompt is too long (max 4096 characters)". The draft was 4,196; cut to 3,555 without touching the fixed blocks | none (refused) |
 | 2026-11-17 | second post, tested in both tools | Higgsfield vs Google Flow, same prompts | Both outputs acceptable, though they look different. The same prompt style works in both | — | — |
-| 2026-11-17 | stuck-steel-glasses (plan) | Google Flow clips + separate ElevenLabs VO (30.85 s) | Voice first, then scenes cut at the measured pauses: 6 scenes of 4–6 s. Clips have no narration | — | — |
+| 2026-11-17 | ghat-road test clip (camera-journey format) | Google Flow, text-to-video, 8 s, photoreal, Hindi narration in-clip, 5,241-char second-by-second prompt | — | No usable output: the user called it "not acceptable at all". What exactly went wrong wasn't recorded. Retrying in Higgsfield in clean stylized 3D | — |
+| 2026-11-17 | stuck-steel-glasses (plan; post dropped the same day) | Google Flow clips + separate ElevenLabs VO (30.85 s) | Voice first, then scenes cut at the measured pauses: 6 scenes of 4–6 s. Clips have no narration | — | — |
 
 ## Sources
 - [Higgsfield — Grok Imagine](https://higgsfield.ai/grok-imagine) (checked 2026-11-17)

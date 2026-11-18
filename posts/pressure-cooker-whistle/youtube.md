@@ -32,7 +32,7 @@ Toh agli baar seeti baje, samajh lena — aapka cooker bas sahi time par saans c
 
 Rozmarra ki cheezein, andar se kaise kaam karti hain — 3D mein, bina bore kiye.
 
-🔔 Subscribe karo Why Bhai — nayi Shorts har hafte.
+🔔 Subscribe karo Why Bhai — nayi Shorts har din.
 
 #shorts #whybhai #pressurecooker #kitchenscience #scienceinhindi #hinglish #howitworks #3danimation #indianscience #factsinhindi
 ```

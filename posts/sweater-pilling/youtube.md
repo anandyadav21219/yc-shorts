@@ -34,7 +34,7 @@ Toh sweater par tiki goli kamzori ki nahi — zaroorat se zyada mazbooti ki nish
 
 Rozmarra ki cheezein, andar se kaise kaam karti hain — 3D mein, bina bore kiye.
 
-🔔 Subscribe karo Why Bhai — nayi Shorts har hafte.
+🔔 Subscribe karo Why Bhai — nayi Shorts har din.
 
 #shorts #whybhai #sweater #pilling #winterscience #scienceinhindi #hinglish #howitworks #3danimation #factsinhindi
 ```
@@ -57,5 +57,8 @@ Sach batao — har saal goliyon se bhar jaane wala wo ek sweater aapke paas bhi 
 - **AI disclosure:** Yes → "Realistic visuals: digitally generated" (AI visuals + AI voice)
 - **Playlist:** How Everyday Things Work
 - **Visibility:** Public, or Schedule for 1–3 PM / 8–10 PM IST. Publish by early December (winter topic).
+- **Thumbnail:** `images/thumbnail.png` (v2: "SWEATER KI GOLI / GIRTI KYUN NAHI?") if the upload screen lets
+  you add your own. Otherwise pick a frame where the pill is big and sharp (end of clip 4 or clip 5).
+- **Video file:** `video/sweater-pilling.mov` (28.6 s, 2160×3840).
 - **Check before publish:** Hindi hook text ("स्वेटर पर गोलियाँ क्यों बनती हैं?") on screen in the first 1–2 sec;
   end frame loops back to clip 1.

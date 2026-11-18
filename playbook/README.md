@@ -9,6 +9,7 @@ re-researching. The channel look, colours, typography and YouTube metadata rules
 | [story-formula.md](story-formula.md) | Writing the script: story arc, hooks, twist + loop, Hindi VO word budget |
 | [grok-imagine-higgsfield.md](grok-imagine-higgsfield.md) | Planning and prompting the clips — picture and Hindi voice together (Higgsfield · Grok Imagine) |
 | [post-template.md](post-template.md) | Starting a new `posts/<slug>/README.md` — copy it and fill it in |
+| [thumbnail.md](thumbnail.md) | Making the thumbnail / Instagram cover in ChatGPT: Hinglish text rules, safe zones, prompt template |
 
 ## New post, start to finish
 1. **Pick the idea.** Exclude everything in [../SUGGESTED_IDEAS.md](../SUGGESTED_IDEAS.md), then add the new one under *In progress*.
@@ -25,8 +26,11 @@ re-researching. The channel look, colours, typography and YouTube metadata rules
 7. **Edit in CapCut:** clips in order, trim each clip to its spoken line, extract the audio before
    reversing a clip, add the Hindi hook text (upper third) and any extra SFX, end on clip 1's first
    frame for the loop.
-8. **Upload:** fill `posts/<slug>/youtube.md` using NICHE.md → *YouTube metadata & titles*, then
-   move the idea to *Published* in SUGGESTED_IDEAS.md.
+8. **Thumbnail:** make it in ChatGPT with [thumbnail.md](thumbnail.md) and save it as
+   `posts/<slug>/images/thumbnail.png`.
+9. **Upload:** fill `posts/<slug>/youtube.md` using NICHE.md → *YouTube metadata & titles*, then
+   move the idea to *Published* in SUGGESTED_IDEAS.md and add a row to [../PUBLISHED.md](../PUBLISHED.md)
+   (link, title used, thumbnail). Fill in its stats at 24 h, 7 d and 28 d.
 
 ## Researching a mechanism (cheap and reliable)
 - **Go straight to patents.** "How does <object> work" searches mostly return Google Patents

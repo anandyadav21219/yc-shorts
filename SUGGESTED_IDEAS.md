@@ -5,10 +5,7 @@ everything on this list** and only propose fresh titles. Add new suggestions her
 
 ## Published
 - कुकर सीटी क्यों बजाता है? — Pressure cooker whistle *(first post)*
-
-## In progress
-- स्वेटर पर गोलियाँ क्यों बनती हैं? — Sweater pilling → `posts/sweater-pilling/` *(winter — post by early Dec)*
-- दो स्टील के गिलास आपस में फँस क्यों जाते हैं? — Stuck nested steel glasses → `posts/stuck-steel-glasses/` *(script done; VO from ElevenLabs)*
+- स्वेटर पर गोलियाँ क्यों बनती हैं? — Sweater pilling → `posts/sweater-pilling/` *(YouTube Shorts, 17 Nov 2026)*
 
 ## Suggested (not yet made)
 - ₹10 का पेन इतना smooth कैसे लिखता है? — Ballpoint pen
@@ -43,8 +40,19 @@ everything on this list** and only propose fresh titles. Add new suggestions her
 - नेल कटर इतनी आसानी से नाखून कैसे काटता है? — Nail cutter compound lever *(Hindi: "hidden uses" videos only)*
 - *(backup)* आईडी कार्ड की डोरी अपने आप वापस कैसे जाती है? — Retractable badge reel *(no Hindi; English Shorts under 1K views)*
 
+### Scale-comparison format — camera-journey style (proposed 17 Nov 2026; not checked on YouTube yet, numbers not verified)
+- भारत का सारा सोना Statue of Unity के आगे कितना है? — RBI gold reserve vs Statue of Unity
+- भारत एक दिन में जितनी रोटी खाता है, उसका ढेर कितना ऊँचा होगा? — One day of India's rotis, stacked
+- Indian Railways की पूरी पटरी जोड़ दें तो धरती के कितने चक्कर? — Indian Railways track vs Earth
+- Mumbai local में एक दिन में कितने लोग चलते हैं? — Mumbai local daily riders vs stadiums
+
+### Camera-journey "you build it" format (proposed 17 Nov 2026, see `playbook/camera-journey-format.md`)
+- पहाड़ पर सड़क सीधी ऊपर क्यों नहीं जाती? — Ghat road / hairpin bends *(Hindi Shorts exist but are weak: top one about 15K views; none in this style)*
+- बारिश के बाद सड़क में गड्ढे क्यों हो जाते हैं? — Road layers, camber and drains *(Hindi: top Short about 24K; camber Shorts are in the hundreds)*
+
 ## Dropped — don't suggest again
 - Push-button automatic umbrella (dropped 17 Nov 2026)
+- दो स्टील के गिलास आपस में फँस क्यों जाते हैं? — Stuck nested steel glasses (dropped 17 Nov 2026 after the script and VO were done; folder moved to the Trash)
 
 ## Already covered on YouTube — skip (checked 17 Nov 2026)
 Hindi explainer Shorts (many in 3D) already exist for these, so we wouldn't be first:
@@ -63,3 +71,7 @@ Also covered (checked 17 Nov 2026, batch 2): zip tie lock, office-chair gas lift
 doorbell, spinning top (lattu), click hand warmer, toothpaste stripes. Weak gap, not suggested:
 self-inking stamp (one Hindi Short with 64 views, one Hindi long video), airtight lock-lid box
 (low curiosity).
+Also covered (checked 17 Nov 2026, for the camera-journey format): borewell (many 3D Shorts, up to
+2.5 crore), petrol-pump underground tank, bridge pillar in a river (cofferdam), village water tank
+height, cricket ground drying after rain (Hindi Short at 9.9 lakh), stepwell (an English "How a Hole
+Becomes a Stepwell" Short exists).

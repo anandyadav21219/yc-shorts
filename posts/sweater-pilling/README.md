@@ -1,6 +1,7 @@
 # Post — "स्वेटर पर गोलियाँ क्यों बनती हैं?"
 
 **How sweater pilling works, and why some pills never fall off**
+**Status: published on YouTube Shorts, 17 Nov 2026.** Link and stats: [../../PUBLISHED.md](../../PUBLISHED.md).
 ~27 sec (28 max) · 9:16 · stylized-realistic 3D text-to-video with Hindi narration, all generated in Higgsfield (Grok Imagine) · merged in CapCut
 
 > Channel-wide style, colour rules and typography: [../../NICHE.md](../../NICHE.md) → *Channel design*.
@@ -13,6 +14,8 @@
 - `README.md` — this plan (story, script, object and voice blocks, clip prompts)
 - `youtube.md` — paste-ready upload fields (title, description, tags, pinned comment)
 - `clips/` — the Higgsfield clips (picture + voice), numbered in edit order (to generate)
+- `images/thumbnail.png` — the thumbnail and Instagram cover, made in ChatGPT (to make; see *Thumbnail*)
+- `video/sweater-pilling.mov` — the CapCut edit, exported 17 Nov 2026 (28.6 s, 2160×3840, 152 MB)
 
 ## Story
 **Arc in one line:** the pills don't come from outside, they *are* your sweater → every yarn is short fibres with loose ends → rubbing pulls the ends out → they tangle into a ball → twist: it never falls off because its fibres won't break → so the pill is a sign of strength, not weakness → loop.
@@ -463,6 +466,89 @@ text). Rule: [../../NICHE.md](../../NICHE.md) → *Narration captions*.
 | 4 | रेशे उलझते हैं, लिपटते हैं… | और बन जाती है गोली! |
 | 5 | पर गिरती क्यों नहीं? | इसके रेशे टूटने का नाम नहीं लेते। |
 | 6 | यानी ये गोली कमज़ोरी नहीं — | ज़रूरत से ज़्यादा मज़बूती की निशानी है। |
+
+## Thumbnail
+Made in ChatGPT (image generation). Rules and template: [../../playbook/thumbnail.md](../../playbook/thumbnail.md).
+The text is Hinglish in Roman capitals, not Devanagari (decided 2026-11-17).
+
+**Version 1 (rejected, 17 Nov):** a fuzzy pill sitting on the knit, with the whole sweater blurred behind it and
+the text "SWEATER KI GOLI / DIRT NAHI HAI!". The text style worked. Everything else didn't:
+- **Green on green:** green pill, green knit, green sweater behind. Nothing popped.
+- **The pill looked like moss or a tennis ball:** lime green, with long yellow hairs.
+- **The blurred sweater behind loomed like a ghost** and pushed the warm colours out of the frame.
+- **It was a static product shot,** with nothing happening, so there was no reason to click.
+- **Line 2 was about 85% of the width,** too wide to survive the crop to 9:16.
+
+**Version 2, the idea:** show **the moment from clip 5**. The pill is being pulled up off the sweater, and it won't
+come off: three or four of the sweater's own fibres are stretched tight underneath it, holding on. We see it from
+a low angle, lying on the knit, so the pill stands **against the warm peach gradient**, not against more green.
+- **The picture asks the question and the text says it:** "Sweater ki goli girti kyun nahi?" Anyone who has tried
+  to pick one off feels it.
+- **The fibres show both halves of the story:** the pill is made of the sweater itself, and it's held on by strength.
+  The title then gives the twist.
+
+**Text (pick one, spelled exactly):**
+
+| | Line 1 | Line 2 | Why |
+|---|---|---|---|
+| **Recommended** | `SWEATER KI GOLI` | `GIRTI KYUN NAHI?` | The question the picture shows; the clip 5 line everyone relates to |
+| Alt | `PULL KARO,` | `PHIR BHI NAHI GIRTI!` | Relatable, a full Hindi–English mix |
+| Alt | `SWEATER KI GOLI` | `DIRT NAHI HAI!` | The version 1 text, if you prefer the contradiction |
+
+**How to run it:**
+- **Open a new ChatGPT chat,** so it doesn't copy version 1.
+- **Optional, for colour:** attach a still from your edit and put this line at the very top of the prompt:
+  `Use the attached image only as the reference for the sweater's deep bottle-green colour and yarn texture.`
+
+**Prompt (paste into ChatGPT):**
+
+```text
+Create a vertical YouTube Shorts thumbnail in tall portrait format, ideally 9:16 (1080×1920). If 9:16 isn't available, use 2:3 portrait and keep every important element inside the central 75% of the width, so the sides can be cropped to 9:16.
+
+Style: premium stylized-realistic 3D CGI, like a hero frame from a high-end 3D motion-graphics explainer. Believable materials, soft cinematic studio lighting, clearly a polished 3D render: not a photo, not a cartoon, not generic AI art. No neon, no glowing rings, no lens flares, no sparkles, no bloom.
+
+The moment: a pill is being pulled up off a sweater by an invisible force, and it will not come off. Show it in extreme macro from a low angle, as if the camera is lying on the sweater.
+
+Floor: the lower third of the image is the knitted surface of a deep bottle-green plain-knit (stockinette) wool sweater: big, neat V-shaped stitches of soft matte yarn with visible twisted plies and fine short fuzz, crisp in the middle and falling softly out of focus toward the bottom edge.
+
+Hero: one single sweater pill, lifted a little above the knit, centred horizontally, its centre about 55% of the way down the image, about 35% of the image width. It is a dense, compact, slightly irregular ball of tightly tangled fibres in exactly the same deep bottle-green as the sweater, a touch lighter on its lit side, with only short fine fuzz on its surface. It looks like a real sweater pill: not moss, not a pompom, not a tennis ball, no long hairs, no yellow fibres. Three or four single green fibres run from the underside of the pill down into the yarn of the stitches below, pulled perfectly straight and taut, clearly still part of the sweater and holding the pill down.
+
+Background: behind and above the pill there is no sweater, only a smooth warm studio gradient, rich peach at the top fading to cream and soft golden yellow near the horizon of the knit, so the green pill stands out strongly against the warm colour. No room, no props, no people, no hands, no fingers, no tweezers.
+
+Light: a warm light from behind and above the pill gives its fuzzy outline and each taut fibre a thin bright rim, so the fibres read as bright, tense lines; soft front fill keeps the pill's texture visible. A soft shadow under the pill on the knit. Shallow depth of field.
+
+Graphic: one bold, smooth, matte soft-coral arrow to the left of the pill, curving in to point at the taut fibres under it. Flat matte colour, no glow, no outline.
+
+Text: two lines, centred, in the upper part of the image on the peach background, starting about 15% from the top edge and ending about a third of the way down. Spell it exactly, in capital Roman letters:
+Line 1: "SWEATER KI GOLI"
+Line 2: "GIRTI KYUN NAHI?"
+Use a very heavy, clean, rounded sans-serif font (like Montserrat ExtraBold or Poppins Black). White letters with a thick deep-green outline and a soft dark drop shadow. Line 2 is larger than line 1. Each line is at most 75% of the image width, with clear empty space on both sides. No other text, letters, numbers, logos or watermarks anywhere.
+
+Layout: keep the top 12% and the bottom 23% free of text, the pill and the arrow, and keep the right edge free of important details. One clear subject, big text, strong colour contrast: it must read instantly at small phone-thumbnail size.
+```
+
+To use an alternative text, change only the two quoted lines.
+
+**Check before you use it:**
+- **Spelling:** every letter of both lines is right, and there is no extra text anywhere.
+- **Small-size test:** shrink it to about 3 cm wide on your phone. You should still read the text and see the
+  green pill pop off the peach background, with its fibres stretched tight.
+- **Pill:** the same deep green as the knit, dense and pill-like, with short fuzz. Not moss, not lime, no long hairs.
+- **No hands, fingers or tweezers.**
+- **Size:** if ChatGPT gave a 2:3 image, place it on a 1080×1920 canvas in Canva or CapCut, fill the height and
+  let the sides crop. Check both text lines still have space on each side, and the text is 280–640 px from the top.
+- Save it as `images/thumbnail.png` in this folder.
+
+**If it fails (reply in the same chat, one fix at a time):**
+- **Text misspelt:** "Fix the text to read exactly SWEATER KI GOLI / GIRTI KYUN NAHI? and change nothing else."
+  If it's still wrong, ask for "the same image with no text at all" and add the text in Canva or CapCut (heavy
+  rounded sans, white, thick dark-green outline, soft shadow, 280–640 px from the top).
+- **The pill still looks like moss or a pompom:** "Make the pill smaller, denser and darker green, like a real
+  pill on a sweater, with only short fuzz. Change nothing else."
+- **The fibres don't show:** "Make the three or four fibres under the pill clearly visible, straight and tight,
+  with a thin bright rim. Change nothing else."
+- **Hands or tweezers appear:** "Remove the hands and tweezers; the pill is pulled by an invisible force."
+- **It looks like a photo:** "Make it clearly a stylized 3D render, not a photograph."
 
 ## Mechanism check
 Rubbing at high-wear spots (cuffs, collar, under the arms) pulls the ends of short fibres out of the yarn

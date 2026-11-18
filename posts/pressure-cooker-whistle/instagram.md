@@ -26,7 +26,7 @@ Upar rakha chhota sa weight ek darban hai: pressure badhte hi steam use halka sa
 
 Sach bolo — aap bhi seeti ginke gas band karte ho? 😄
 
-Follow karo Why Bhai — rozmarra ki cheezein, andar se, 3D mein. Nayi Reel har hafte.
+Follow karo Why Bhai — rozmarra ki cheezein, andar se, 3D mein. Nayi Reel har din.
 
 #whybhai #pressurecooker #kitchenscience #scienceinhindi #howitworks
 ```

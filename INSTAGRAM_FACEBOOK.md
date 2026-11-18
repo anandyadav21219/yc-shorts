@@ -41,7 +41,7 @@ the same file as YouTube. One-time setup first, then the routine for every post.
    - **Bio** (150 characters max):
      ```
      Rozmarra ki cheezein andar se kaise kaam karti hain 🔍
-     3D mein, Hindi mein · Nayi Reel har hafte
+     3D mein, Hindi mein · Nayi Reel har din
      ```
    - **Links:** the YouTube channel. Add the Facebook Page once it exists.
 5. **Security:** *Accounts Center → Password and security → Two-factor authentication* → on. Save
@@ -102,7 +102,7 @@ Write it in Hinglish like the YouTube description, but for someone scrolling who
    people search for ("pressure cooker", "kaise kaam karta hai"). Instagram search reads captions,
    so this does the job of YouTube's Tags field.
 3. **One question** that invites a comment.
-4. `Follow karo Why Bhai — nayi Reel har hafte.`
+4. `Follow karo Why Bhai — nayi Reel har din.`
 5. **Max 5 hashtags:** `#whybhai` + 1–2 object tags + `#scienceinhindi #howitworks`. Instagram
    now caps posts at 5. Don't use `#shorts` (it's YouTube-only), and don't put extra hashtags in
    comments.
