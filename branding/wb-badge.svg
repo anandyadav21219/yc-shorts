@@ -1,0 +1,38 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WB badge icon">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26324F"/>
+      <stop offset="1" stop-color="#141C30"/>
+    </linearGradient>
+    <linearGradient id="amber2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F6A91B"/>
+      <stop offset="1" stop-color="#F7B733"/>
+    </linearGradient>
+    <linearGradient id="wbface" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E7EBF3"/>
+    </linearGradient>
+    <filter id="tileShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- dark page background -->
+  <rect x="0" y="0" width="600" height="600" rx="40" fill="#2C2F36"/>
+
+  <!-- everything on the badge shares one italic slant -->
+  <g transform="translate(70,0) skewX(-12)">
+    <!-- navy tile -->
+    <rect x="115" y="150" width="360" height="300" rx="54" fill="url(#tile)" filter="url(#tileShadow)"/>
+
+    <!-- WB wordmark (subtle extrude + white face) -->
+    <g font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900"
+       font-size="180" text-anchor="middle" letter-spacing="-6">
+      <text x="296" y="356" fill="#0C1326" opacity="0.55">WB</text>
+      <text x="292" y="350" fill="url(#wbface)">WB</text>
+    </g>
+
+    <!-- amber underline swoosh -->
+    <rect x="236" y="382" width="190" height="26" rx="13" fill="url(#amber2)"/>
+  </g>
+</svg>
