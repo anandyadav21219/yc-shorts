@@ -2,70 +2,65 @@
 
 Copy everything below the line into `posts/<slug>/README.md` and replace every `[…]`. Keep the
 section order so every post README reads the same and any session can pick one up quickly.
+The finished example is [../posts/fan-regulator/README.md](../posts/fan-regulator/README.md).
 
 ---
 
 # Post — "[Hindi hook question]"
 
 **[How a … works — one English line]**
-~[NN] sec · 9:16 · stylized-realistic 3D text-to-video with Hindi narration, all generated in Higgsfield (Grok Imagine) · merged in CapCut
+~[NN] s · 9:16 · image Short: [N] stylized-3D images from ChatGPT, ElevenLabs Hindi voice, captions
 
-> Channel-wide style, colour rules and typography: [../../NICHE.md](../../NICHE.md) → *Channel design*.
-> Story rules and per-clip word budget: [../../playbook/story-formula.md](../../playbook/story-formula.md).
-> Clip rules and prompt template: [../../playbook/grok-imagine-higgsfield.md](../../playbook/grok-imagine-higgsfield.md).
+> Channel style, colours and typography: [../../NICHE.md](../../NICHE.md) → *Channel design*.
+> Story rules and word budget: [../../playbook/story-formula.md](../../playbook/story-formula.md).
+> Image Short rules (prompts, consistency, checks): [../../playbook/image-shorts.md](../../playbook/image-shorts.md).
 
-## Files in this folder
-- `README.md` — this plan (story, script, object and voice blocks, clip prompts)
-- `youtube.md` — paste-ready upload fields (title, description, tags, pinned comment)
-- `clips/` — the Higgsfield clips (picture + voice), numbered in edit order
+## Fact sheet (write this before any prompt)
+- **Cause → effect chain:** [input → hidden part → output, one link per line]
+- **Real parts shown:** [only parts that exist in the common design]
+- **Directions:** [which way each force, flow or movement really goes, and what the arrows stand for]
+- **Left out on purpose:** [simplifications]
 
 ## Story
-**Arc in one line:** [hook claim] → [mystery question] → [culprit part] → [how] → [twist] → loop.
+**Arc in one line:** [hook claim] → [culprit part] → [how] → [twist] → loop.
 
-| Time | Clip | What we see | Voiceover (Hindi, spoken in the clip) | SFX |
-|------|------|-------------|---------------------------------------|-----|
-| 0–3s | 1 · Hook | | | |
-| […] | | | | |
+**Hook text on screen (first ~3 s, upper third):** [Hindi hook question]
 
-**Full script ([N] words ≈ [N ÷ 2.75] sec; every line ≤ 12 words):**
+| # | Image | Beat | Voice (Hindi, ElevenLabs) | ~s |
+|---|-------|------|---------------------------|----|
+| 01 | [what we see] | Hook | [phrase] | |
+| … | | | | |
+| 01 | Opening image again (reuse) | Loop | — | 1.5 |
+
+**Full script ([N] words ≈ [N ÷ 2.3] s; every line ≤ 12 words). Paste into ElevenLabs as one take:**
 
 > […]
 
-## Object design (on top of the channel style)
-- **Materials:** [e.g. soft matte bottle-green yarn with visible twisted plies and a fine fibre fuzz]
-- **Background palette:** [pick from NICHE.md: soft yellow, peach, coral pink, mint, cream]
-- **Force/motion arrows:** clean matte coral, never neon (leave them out of any clip you'll reverse)
+## Images: [N] to make, one prompt file each
+Make them in order in one ChatGPT chat, attaching the hero each file names.
 
-## Prompt blocks (paste word for word into every clip)
-**Object block:**
+| Hero (make first) | Used again in |
+|---|---|
+| [NN object] | [NN, NN] |
 
-> [The object, its materials and colours, and the background, in 2–4 sentences. Example:
-> [../sweater-pilling/README.md](../sweater-pilling/README.md) → *Object block*.]
+[links to prompts/NN-*.md]
 
-**Voice block:** the channel default in
-[../../playbook/grok-imagine-higgsfield.md](../../playbook/grok-imagine-higgsfield.md) →
-*Voice block*, unless this post needs a different one.
+## Look (on top of the channel style)
+- **Objects:** […]
+- **Colour code for this post:** […]
+- **Backgrounds:** [from NICHE.md: soft yellow, peach, coral pink, mint, cream]
 
-## Clips
-Every prompt follows the *Clip prompt template*, with the object block and voice block pasted in.
-
-| # | Use (sec) | Beat | Scene · action · camera | VO line (Hindi) | Sound effects |
-|---|-----------|------|-------------------------|-----------------|---------------|
-| 1 | | Hook *(baseline: make it first)* | | | |
-| […] | | | | | |
-
-## Production notes
-- Make clip 1 first and approve it. If a later clip drifts from it, start that clip from a frame
-  of clip 1 (image-to-video).
-- Money shot: [which clip — spend the extra takes there].
-- Reversed clips: [which clips; extract the audio in CapCut before reversing the video].
-- Listen for: [Hindi words the model may mispronounce]. Regenerate the take if one comes out wrong.
-- CapCut: clips in order, each trimmed to its spoken line; extra SFX: [list]; Hindi hook title over
-  clip 1 (upper third, never in the generated video); end on a freeze of clip 1's first frame.
-- Captions: added in CapCut in the channel style (NICHE.md → *Narration captions*); every prompt
-  ends with the playbook's no-text line. List each clip's caption text (two lines).
+## Files
+| File | What it is |
+|---|---|
+| `README.md` | This plan |
+| `prompts/NN-*.md` | One paste-ready ChatGPT prompt per image |
+| `images/NN-*.png` | The approved images |
+| `audio/vo.mp3` | The ElevenLabs take |
+| `<slug>.mp4` | The finished Short |
+| `thumbnail-prompt.md`, `youtube.md`, `instagram.md` | Made after the video |
 
 ## Mechanism check
-[Input → hidden part → output, in one line. Note where real designs differ.]
+[Input → hidden part → output, in one line. Note where real designs differ and what the video simplifies.]
 
-Sources: [patent / page links]
+Sources: [links, with the date checked]

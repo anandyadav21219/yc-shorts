@@ -1,83 +1,68 @@
-# Thumbnail — ChatGPT image prompt
+# Thumbnail — ChatGPT from a context prompt
 
-How we make every post's thumbnail, which is also the Instagram/Facebook cover. It's made in ChatGPT's
-image generation; the clips stay in Higgsfield. The channel look and safe zones come from
-[../NICHE.md](../NICHE.md). First used on sweater pilling (2026-11-17); log what you learn at the bottom.
+Every post's thumbnail, which is also the Instagram/Facebook cover, is made in ChatGPT image generation
+from a **context prompt** (from 2026-11-19). The prompt gives ChatGPT the video's story, what is on screen and
+the channel's design style. ChatGPT picks the moment, the layout and the Hindi headline itself. The
+headline is **Hindi in Devanagari**. Result of this method:
+[../posts/how-rain-works/images/thumbnail-chatgpt.png](../posts/how-rain-works/images/thumbnail-chatgpt.png).
+Prompts: [rain](../posts/how-rain-works/thumbnail-prompt.md), [sweater](../posts/sweater-pilling/thumbnail-prompt.md),
+[pressure cooker](../posts/pressure-cooker-whistle/thumbnail-prompt.md), [wind](../posts/how-wind-works/thumbnail-prompt.md).
+
+## The method: the `thumbnail-prompt` skill
+The template and the rules for filling it live in the project skill
+[../.claude/skills/thumbnail-prompt/SKILL.md](../.claude/skills/thumbnail-prompt/SKILL.md), so there is one copy.
+For a new video, ask Claude Code for "the thumbnail prompt for <video>" or run `/thumbnail-prompt <post>`. It
+reads the post's README and contact sheet, fills the template, saves `posts/<slug>/thumbnail-prompt.md` and
+returns the prompt.
+
+Then:
+1. **Paste it into a new ChatGPT chat**, so it doesn't copy an earlier thumbnail.
+2. **Check it** (see *Checks*), fix it in the same chat if needed, and save it as
+   `posts/<slug>/images/thumbnail.png`.
+
+The key rule: **describe the video, not the picture.** Don't add positions, badges, hex codes, camera angles,
+sizes or a fixed headline. ChatGPT does better without them (sweater v4, which spelled out the rain
+thumbnail's layout, came out worse).
 
 ## Rules
-- **Text in Hinglish, Roman capitals, not Devanagari** (from 2026-11-17). It matches the Hinglish titles and
-  reaches viewers who don't read Devanagari, and image models spell Roman letters far more reliably.
-- **Two lines, 6 words at most.** Mix Hindi and English the way people talk (`SWEATER KI GOLI` /
-  `DIRT NAHI HAI!`).
-- **The thumbnail and the title split the job.** The thumbnail carries the hook (the contradiction or the
-  question); the title carries the twist. Never repeat the title's hook; the object's name ("Sweater Ki Goli")
-  may appear in both, because it's the search word. Don't give the answer away on the thumbnail.
-- **Show a moment, not a product shot.** Pick the frame from the story with tension in it (a pull that won't
-  give, a part mid-action), so the picture itself asks the question. A still object sitting there gives no
-  reason to click.
-- **One subject, big and sharp,** about 35–45% of the width, in the video's own look (same object block
-  colours). One matte coral arrow may point at the detail that tells the story. No other graphics.
-- **The subject must contrast with what's behind it.** Put it against the warm gradient (a low angle helps),
-  not against more of the same object. Don't put a blurred copy of the whole object behind it: it looms like a
-  ghost and pushes the warm colours out of the frame.
-- **Describe the subject's real look and say what it is not.** Give its exact colour and say "not moss, not a
-  pompom", or whatever look-alike the model reaches for.
-- **Readable on a light gradient.** Use a very heavy rounded sans (Montserrat ExtraBold, Poppins Black), white
-  with a thin dark outline in the object's colour and a soft drop shadow. Make the gradient slightly deeper
-  behind the text. Line 2 is a little larger.
-- **Safe zones at 1080×1920:**
-  - Text 280–640 px from the top (≈ 15–33%).
-  - Nothing important in the top 12% or the bottom 23%, or along the right edge (Instagram's 3:4 grid crop
-    and the Shorts/Reels buttons).
-  - Keep everything inside the central 75% of the width, so a 2:3 image can be cropped to 9:16. Say "each
-    line at most 75% of the image width" in the prompt, or the model runs the text nearly edge to edge.
-- **Use a new ChatGPT chat for a new attempt,** so it doesn't copy the previous image. Make small fixes in the
-  same chat, one at a time, ending with "change nothing else".
-- **ChatGPT may only offer 2:3 portrait.** Place it on a 1080×1920 canvas in Canva or CapCut, fill the height
-  and let the sides crop.
-- **For a closer match to the video,** attach a still from the edit and put the reference line at the top of
-  the prompt (template below).
-- **Save it** as `posts/<slug>/images/thumbnail.png` and put the filled prompt in the post README → *Thumbnail*.
+- **The thumbnail and the title split the job.** The thumbnail carries the hook (the question or the
+  contradiction); the title carries the twist. That's why the prompt tells ChatGPT the twist but asks it
+  not to give it away.
+- **Hindi text in Devanagari** (from 2026-11-19; the rain and sweater thumbnails before this used Hinglish
+  in Roman capitals).
+- **Every visual comes from the video.** List only things that are really on screen, so the thumbnail
+  matches what the viewer then sees.
+- **The subject must contrast with what's behind it.** Green on green failed on sweater v1.
 
-## Prompt template
-Replace every `[…]`. Leave out the first line if you don't attach a reference still.
+## Checks
+- **Hindi spelling:** ChatGPT often breaks Devanagari vowel signs and joined letters (ँ, ं, ी, ्).
+  Zoom in and read every letter.
+- **Small-size test:** shrink it to about 3 cm wide on the phone. The text and the subject must still read
+  at a glance.
+- **Safe zones at 1080×1920:** the text near the top, nothing important in the bottom fifth (the Shorts title
+  and buttons cover it), and a little margin on both sides.
+- **Size:** if ChatGPT gives a 2:3 image, place it on a 1080×1920 canvas, fill the height and let the sides
+  crop. Check the text still has space on both sides.
+- **Look:** stylized 3D, no hands or people, no neon or glow, no extra text.
 
-```text
-Use the attached image as the reference for the [OBJECT]'s colours, materials and look, and keep that look exactly.
+## If it fails (reply in the same chat, one fix at a time)
+- **Hindi misspelt:** "Fix only the Hindi text so it reads exactly: [line 1] / [line 2]. Change nothing else."
+  If it's still wrong, ask for "the same image with no text at all" and add the text yourself.
+- **Text too close to the edges or the bottom:** "Make the text smaller and keep it in the upper third, with
+  space on both sides."
+- **Looks like a photo or a cartoon:** "Make it clearly a clean stylized 3D render."
+- **Subject blends into the background:** "Change the background to [a contrasting warm colour]."
 
-Create a vertical YouTube Shorts thumbnail in tall portrait format, ideally 9:16 (1080×1920). If 9:16 isn't available, use 2:3 portrait and keep every important element inside the central 75% of the width, so the sides can be cropped to 9:16.
-
-Style: premium stylized-realistic 3D CGI, like a hero frame from a high-end 3D motion-graphics explainer. Believable materials, soft cinematic studio lighting, clearly a polished 3D render: not a photo, not a cartoon, not generic AI art. No neon, no glowing rings, no lens flares, no sparkles, no bloom.
-
-The moment: [THE ONE MOMENT OF TENSION FROM THE STORY, in one sentence, and the camera viewpoint].
-
-Hero: [THE ONE SUBJECT — what it is, its exact colour and materials, about 35–45% of the image width, centred horizontally, its centre about 55% of the way down; what it is NOT ("not moss, not a pompom"); plus the one detail that tells the story].
-
-Background: behind the subject, only a smooth warm studio gradient in [PALETTE FROM THE POST], richer at the top, so the subject stands out strongly against it. No room, no props, no people, no hands.
-
-Light: a warm light from behind the subject gives it and [THE DETAIL] a thin bright rim, with soft front fill. Rich, clean contrast. Shallow depth of field.
-
-Graphic: one clean, smooth, matte soft-coral arrow curves down from just below the text and points at [THE DETAIL]. Flat matte colour, no glow, no outline.
-
-Text: two lines of bold text, centred, in the upper part of the image, starting about 15% from the top edge and ending about a third of the way down. Spell it exactly, in capital Roman letters:
-Line 1: "[LINE 1]"
-Line 2: "[LINE 2]"
-Use a very heavy, clean, rounded sans-serif font (like Montserrat ExtraBold or Poppins Black). White letters with a thick [DARK OBJECT COLOUR] outline and a soft dark drop shadow, so they read clearly on the light background. Line 2 is larger than line 1. Each line is at most 75% of the image width, with clear empty space on both sides. No other text, letters, numbers, logos or watermarks anywhere.
-
-Layout: keep the top 12% and the bottom 23% of the image free of text and of the subject, and keep the right edge free of important details. It must read instantly at small phone-thumbnail size: one clear subject, big text, strong contrast.
-```
-
-## Checks and fixes
-- **Spelling:** check every letter. If it's wrong, ask once: "Fix the text to read exactly … and change nothing
-  else." If it's still wrong, ask for the same image with no text and add the text in Canva or CapCut, in the
-  same style and position.
-- **Small-size test:** shrink it to about 3 cm wide on the phone. The text and the subject must still read at a
-  glance.
-- **Looks like a photo:** add "Clearly a stylized 3D render, not a photograph."
-- **Glow or sparkles:** add "No glow, no bloom, no sparkle effects."
+## Fallback
+If ChatGPT can't get the Hindi right, ask for the same image with no text and add the headline on the Mac
+(Kohinoor Devanagari Bold, white with a soft dark edge, upper third). The Three.js thumbnail render was
+retired with the code pipeline on 2026-11-20.
 
 ## Notes
 | Date | Post | What worked | What failed |
 |------|------|-------------|-------------|
-| 2026-11-17 | sweater pilling v1 | The white text with a dark-green outline read well; the spelling was right | Green pill on green knit with a blurred green sweater behind: no contrast. The pill came out like lime moss with long yellow hairs. A static shot. Line 2 was about 85% wide, too wide for the 9:16 crop |
-| 2026-11-17 | sweater pilling v2 | *(to fill in)* Pill pulled against the peach gradient, taut fibres, "GIRTI KYUN NAHI?" | |
+| 2026-11-17 | sweater pilling v1 | The white text with a dark-green outline read well | Green pill on green knit: no contrast. A static shot. Line 2 was about 85% wide, too wide for the 9:16 crop |
+| 2026-11-18 | how-rain-works | Rendered from the scene at the crossed-out tear moment; bluer drop on a peach gradient; auto-fitted text | First render: the drop was ~50% wide and the cross touched the right edge, fixed with `zoom: 1.2`; the drop read sage-green on peach until its attenuation was made bluer |
+| 2026-11-19 | how-rain-works, sweater pilling v3 | The context prompt in ChatGPT (story + visuals + design style, Devanagari headline, no fixed layout). ChatGPT put the hook question on coral and mint 3D badges over a floating cut-away of the whole water cycle. Anand liked both results | — |
+| 2026-11-19 | sweater pilling v4 | — | Copying the rain thumbnail's badges, spacing and process layout into the prompt came out worse than v3. Don't fix the layout; let ChatGPT design it |
+| 2026-11-21 | rickshaw-horn v2 | Anand's feedback on v1: ask for **clear margins on every side** (≥ 8% of the width left/right, ≥ 10% of the height at the top), **bold, attractive colours** with a warm/cool contrast against the object, and a **realistic premium-render look** (real materials, true shadows). The background can be the video's own street, blurred to bokeh. Margins are spacing, not layout, so they don't break the "don't fix the layout" rule | v1 (plain soft gradient, stylized look) read too flat and pale to him |

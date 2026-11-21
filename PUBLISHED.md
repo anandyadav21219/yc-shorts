@@ -10,6 +10,7 @@ every day (NICHE.md).
 |---|------|-----------|--------------|------------|-----------|--------|----------------------|
 | 1 | Pressure cooker whistle · [folder](posts/pressure-cooker-whistle/) | *(date not recorded)* | *(paste link)* | *(confirm; the recommended one was "Aapka Cooker Seeti Nahi Bajata — Wo Saans Chhodta Hai")* | Devanagari title, `images/thumbnail.png` | ~33 s | *(not recorded)* |
 | 2 | Sweater pilling · [folder](posts/sweater-pilling/) | 17 Nov 2026 | *(paste link)* | *(confirm; the recommended one was "Sweater Ki Goli Kamzori Nahi — Zaroorat Se Zyada Mazbooti Hai")* | *(confirm: v2 "GIRTI KYUN NAHI?", or a frame)* | 28.6 s | not posted yet |
+| 3 | How rain works · [folder](posts/how-rain-works/) | 18 Nov 2026 | *(paste link)* | *(confirm; the recommended one was "Baarish Ki Boond Aansu Jaisi Nahi — Pav Jaisi Hoti Hai")* | *(confirm: `images/thumbnail.png`, or the frame at ~23.0 s)* | 25.6 s | *(confirm)* |
 
 ## Stats
 Check each post at **24 hours**, **7 days** and **28 days**.
@@ -23,6 +24,9 @@ Check each post at **24 hours**, **7 days** and **28 days**.
 | Sweater pilling | 24 h | 18 Nov 2026 | | | | | | | |
 | Sweater pilling | 7 d | 24 Nov 2026 | | | | | | | |
 | Sweater pilling | 28 d | 15 Dec 2026 | | | | | | | |
+| How rain works | 24 h | 19 Nov 2026 | | | | | | | |
+| How rain works | 7 d | 25 Nov 2026 | | | | | | | |
+| How rain works | 28 d | 16 Dec 2026 | | | | | | | |
 
 ## What we learned
 After each 7-day check, add one line: what seemed to work or not (hook, thumbnail, title, length, loop). Move

@@ -55,15 +55,19 @@ animation". What the frames show:
   text-to-video can't hold. So the likely path is: consistent keyframe stills from an image model
   that keeps a reference, then image-to-video with **start and end frames** (each clip's end frame
   is the next clip's start frame), then cut in an editor with captions and a watermark on top.
-- **Which video model:** can't tell from the pixels. Kling 3.0 and Seedance (both on Higgsfield)
-  are the common start/end-frame models for this; Runway's Keyframe mode is another.
+- **Which video model:** can't tell from the pixels.
 
-**What it means for us:** a single text-to-video prompt (our 17 Nov Google Flow test) can't make this.
-Build it shot by shot from keyframe images instead. That breaks the channel rule "no stills in the
-video" in [../NICHE.md](../NICHE.md); decide before the next test.
+**What it means for us:** in code this format is easier, not harder. We own the world, so the
+place stays identical from start to end and the camera can fly anywhere: through the water surface,
+under the road, through a sliced-open wall. The smearing and melting of AI video can't happen.
 
-## Making it in Higgsfield (to test)
-- Each shot is one short clip with **one** impossible move. Continuity comes from describing the same
-  place word for word in every prompt, and, where the model allows a start frame, starting each clip
-  on the last frame of the one before.
-- Keep the hero view identical in the first and last clips, for the loop.
+## Making it in Three.js
+- **One scene for the whole video** (the place), with the "world changes" done as time-driven
+  animation in `renderAt(t)`: things build, flood or crack while the camera moves slowly.
+- **The camera is a path, not cuts.** Write it as keyframes in time (position + look target) and
+  interpolate with eased segments. Hide the few real cuts with a pass through a surface (water, ground)
+  or a match on the same framing.
+- **Impossible moves are just camera positions:** under the tarmac with the road drawn as a slab
+  seen from below, half above and half below a water plane, inside a cut-away wall.
+- **Keep the hero view identical** in the first and last seconds, for the loop.
+- Pipeline, accuracy rules and review: [threejs-video.md](threejs-video.md).
