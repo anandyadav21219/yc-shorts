@@ -4,7 +4,7 @@ From 2026-11-20 every Short is an **image Short**: one stylized 3D image per spo
 ChatGPT from a paste-ready prompt, then put together on this Mac with a slow move on each image, the
 ElevenLabs Hindi voice and burnt-in captions. The Three.js code pipeline is retired
 ([threejs-video.md](threejs-video.md) is kept only as history; its template post was deleted on
-2026-11-20). First image Short: [../posts/fan-regulator/](../posts/fan-regulator/).
+2026-11-20). First image Short: fan-regulator (its README, prompts and images are in git history, commit 4659432).
 
 ## Post folder
 ```
@@ -14,10 +14,11 @@ posts/<slug>/
   images/NN-*.png    the approved images
   audio/vo.mp3       the ElevenLabs take (from Anand)
   <slug>.mp4         the finished Short
-  thumbnail-prompt.md, youtube.md, instagram.md
+  thumbnail-prompt.md
+  upload.md          YouTube + Instagram/Facebook fields in one file
 ```
-When a post is published, everything except the MP4, the thumbnail, `thumbnail-prompt.md`,
-`youtube.md` and `instagram.md` can be cleared out (Anand's call, 2026-11-20).
+When a post is published, only `<slug>.mp4`, `thumbnail.png` and `upload.md` are kept; everything else
+is cleared out (Anand's call, 2026-11-21).
 
 ## From idea to images
 1. **Fact sheet first** (mechanism method in [README.md](README.md)). Accuracy still comes first: every
@@ -91,7 +92,7 @@ When a post is published, everything except the MP4, the thumbnail, `thumbnail-p
 - **Output:** 1080×1920, 30 fps, H.264 MP4 named `<slug>.mp4`.
 
 ### The build script (checked 2026-11-20)
-Copy `posts/fan-regulator/build/` into the new post. `build.py` holds the shot list (image, phrase start and
+Copy `tools/build/` into the new post as `build/`. `build.py` holds the shot list (image, phrase start and
 end in the take, motion, caption). It moves each image with sub-pixel PIL transforms, burns in the captions,
 pipes the frames to ffmpeg (libx264 + AAC) and ends on image 01 for the loop. `python3 build/build.py --stills`
 writes one still per shot to `build/stills/` for review first.

@@ -16,13 +16,14 @@ image is built from a fact-checked mechanism.
   image, the shared style block, hero images for consistency, checks, and putting the video together.
   Also: story formula and Hindi VO word budget, thumbnail rules, the mechanism-research method, and
   the post README template
-- `posts/fan-regulator/` — the first image Short: copy its layout to start a new one
+- `tools/build/` — the video build script (`build.py`) and the Devanagari caption renderer; copy into a new post
 - `SUGGESTED_IDEAS.md` — do-not-repeat list: exclude these when suggesting ideas, and log new ones there
 - `PUBLISHED.md` — what's live: links, titles used, and stats at 24 h / 7 d / 28 d, plus lessons learned
 - `INSTAGRAM_FACEBOOK.md` — Instagram + Facebook Page setup and the Reel routine for every post
 - `posts/<slug>/` — one folder per Short: `README.md` (fact sheet, script, image list), `prompts/`
-  (one ChatGPT prompt per image), `images/`, the MP4, `thumbnail-prompt.md`, `youtube.md` and
-  `instagram.md`. Once a post is live, only the MP4, the thumbnail and those three md files are kept
+  (one ChatGPT prompt per image), `images/`, the MP4, `thumbnail-prompt.md` and `upload.md` (YouTube +
+  Instagram/Facebook fields in one file). Once a post is live, only `<slug>.mp4`, `thumbnail.png` and
+  `upload.md` are kept (Anand's call, 2026-11-21). Working files of past posts are in git history
 
 ## Keep it reusable
 - Anything learned that applies beyond one object (prompting, consistency, framing, voice pacing, what
