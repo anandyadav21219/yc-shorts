@@ -75,13 +75,13 @@ the same file as YouTube. One-time setup first, then the routine for every post.
 Apply this to **every** Short. Save each post's filled version as `posts/<slug>/instagram.md`.
 
 ### Video
-- **Upload the CapCut export**, the same MP4 as YouTube. The first one is already right:
-  `posts/pressure-cooker-whistle/video/pressure-cooker-whistle.mp4` is 1080×1920, H.264/AAC, 33 s.
-- **Length:** Instagram recommends Reels up to 3 minutes long to non-followers. The 30–45 s format
+- **Upload the rendered MP4** (`posts/<slug>/<slug>.mp4`), the same file as YouTube. The encoder
+  already writes the right format: 1080×1920, 30 fps, H.264/AAC.
+- **Length:** Instagram recommends Reels up to 3 minutes long to non-followers. The 20–45 s format
   is well inside that.
 - **Your own video on several platforms is fine.** Meta demotes reposts of other people's content
-  and videos with visible watermarks. So never re-download your Short from YouTube, and remove
-  CapCut's ending clip and watermark.
+  and videos with visible watermarks. So never re-download your Short from YouTube; upload the
+  rendered MP4, which has no watermark.
 - **Text position:** Instagram lays its controls over the video: a header at the top, the caption and
   audio at the bottom, and buttons down the right edge. At 1080×1920, put the Hindi hook text about
   **280–640 px from the top**. That's still the upper third, so it works for Shorts too. Keep
@@ -109,8 +109,8 @@ Write it in Hinglish like the YouTube description, but for someone scrolling who
 
 ### Share-screen settings (every time)
 - **Share to Facebook: on.** The same Reel then appears on the Why Bhai Page.
-- **Advanced settings → Add AI label: on.** Meta requires this label for realistic AI voiceovers
-  such as our Higgsfield-generated Hindi voice. It matches the AI disclosure you make on YouTube. Meta can also add
+- **Advanced settings → Add AI label: on.** Our narrator is a computer-generated voice
+  (ElevenLabs), and Meta asks for the label on realistic-sounding generated audio. It matches the AI disclosure you make on YouTube. Meta can also add
   the label automatically, and it may penalise posts that skip it.
 - **Audio:** keep your own track (VO + SFX). It shows up as "Original audio". Don't add trending
   music under the voice.
@@ -144,6 +144,6 @@ instead.
 
 ## Avoid
 - A second Facebook profile for the brand.
-- `#shorts`, YouTube or CapCut watermarks, and re-downloaded files.
+- `#shorts`, YouTube or app watermarks, and re-downloaded files.
 - More than 5 hashtags.
 - Titles or hook text in the top ~280 px of the frame.

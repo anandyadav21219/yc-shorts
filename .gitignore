@@ -1,0 +1,6 @@
+# Videos stay on the Mac, not in git
+*.mp4
+*.mov
+
+# macOS
+.DS_Store
